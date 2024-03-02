@@ -4,10 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  
   const [count, setCount] = useState(0)
 
   function handleCount(){
     setCount(count+1);
+    if (count === 5){
+      setCount(0);
+    }
   }
 
   return (
